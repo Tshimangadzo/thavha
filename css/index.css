@@ -1,4 +1,5 @@
 body {
+  display: grid;
   width: 100%;
   margin:0px;
   background-color: aqua;
@@ -6,6 +7,7 @@ body {
 }
 
 .gridContainer{
+  display: grid;
    width: 100%;
    margin-top: 0%;
 }
@@ -35,12 +37,19 @@ footer {
  img{
 
    border-radius: 50%;
- }
- .topNavBar .icon {
-    float: right;
-    margin-right: 10%;
+ 
   }
+  .topNavBar{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  .topBarMenu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
   .content{
+    display: grid;
       margin: 0% 5% 0% 5%;
   }
   
@@ -73,6 +82,11 @@ footer {
         width: 100%;
     }
     .gridContainer{
-        margin-top: -5%;
+      display: grid;
      }
+     .topNavBar .icon {
+      float: right;
+      margin-right: 10%;
+    }
+    
 } 
